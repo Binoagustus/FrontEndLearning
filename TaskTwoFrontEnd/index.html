@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Register Form</h1>
+    </div>
+    <div id="register">
+        <form id="form1" action="" method="post">
+            <div id="firstname">
+                <label for="first_name"><B>First Name</B></label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter FirstName">
+            </div>
+            <div id="lastname">
+                <label for="last_name"><B>Last Name </B></label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter LastName">
+            </div>
+            <div>
+                <label for="email"><B>Email-id </B></label>
+                <input type="email" id="email_id" name="email_id" placeholder="Enter email id">
+            </div>
+            <div>
+                <label for="mobile_number"><B>Mobile Number </B></label>
+                <input type="tel" id="mobile_number" name="mobile_number" placeholder="1234567890" pattern="[0-9]{10}"
+                    title="Please enter 10 digits">
+            </div>
+            <div>
+                <label for="city"><B>City </B></label>
+                <select name="cities" id="cities" form="form1">
+                    <option value="none" selected disabled hidden>Select a City</option>
+                    <option value="tirunelveli">Tirunelveli</option>
+                    <option value="erode">Erode</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender"><B>Gender </B></label>
+                <div>
+                    <input class="gender" type="radio" id="male" name="gender" value="Male">
+                    <label class="gender" for="male">Male</label>
+                </div>
+                <div>
+                    <input class="gender" type="radio" id="female" name="gender" value="Female">
+                    <label class="gender" for="female">Female</label>
+                </div>
+                <div>
+                    <input class="gender" type="radio" id="others" name="gender" value="Others">
+                    <label class="gender" for="others">Others</label>
+                </div>
+            </div>
+            <div>
+                <label for="course"><B>Course </B></label>
+                <div>
+                    <input class="course" type="checkbox" id="cse" name="course" value="CSE">
+                    <label class="course" for="cse">CSE</label>
+                </div>
+                <div>
+                    <input class="course" type="checkbox" id="ece" name="course" value="ECE">
+                    <label class="course" for="ece">ECE</label>
+                </div>
+                <div>
+                    <input class="course" type="checkbox" id="civil" name="course" value="CIVIL">
+                    <label class="course" for="civil">CIVIL</label>
+                </div>
+                <div>
+                    <input class="course" type="checkbox" id="eee" name="course" value="EEE">
+                    <label class="course" for="eee">EEE</label>
+                </div>
+            </div>
+            <div>
+                <label for="address"><b>Address</b></label>
+                <textarea name="address" id="address" cols="50" rows="4" style="vertical-align: text-top;"></textarea>
+            </div>
+            <div>
+                <label for="image"><b>Upload Image </b></label>
+                <input type="file" name="upload" id="upload" accept=".pdf, .jpeg, .png">
+            </div>
+            <div id="buttons">
+                <input type="submit" id="submit" value="submit">
+                <input type="reset" id="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
