@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade Calculation Form</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="heading">
+        <h2>Grade Calculation Form</h2>
+    </header>
+    <section>
+        <div class="form-container">
+            <form id="form1">
+                <div class="line1">
+                    <div id="firstnamediv">
+                        <label for="first_name"><B>First Name</B></label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter FirstName" autofocus>
+                    </div>
+                    <div id="lastnamediv">
+                        <label for="last_name"><B>Last Name </B></label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter LastName">
+                    </div>
+                </div>
+                <div class="line2">
+                    <div id="regnodiv">
+                        <label for="reg_no"><b>Registration Number</b></label>
+                        <input type="text" id="reg_no" name="reg_no" placeholder="Enter Register Number"
+                            pattern="[0-9]{12}" title="Please enter 12 digits" maxlength="12" required>
+                    </div>
+                    <div id="emailiddiv">
+                        <label for="email_id"><b>Email-id</b></label>
+                        <input type="email" id="email_id" name="email_id" placeholder="Enter Email-id" required>
+                    </div>
+                </div>
+                <div class="line3">
+                    <div id="mobnodiv">
+                        <label for="mob_no"><b>Mobile Number</b></label>
+                        <input type="text" id="mob_no" name="mob_no" placeholder="Enter Mobile Number"
+                            pattern="[0-9]{10}" title="Please enter 10 digits" maxlength="10">
+                    </div>
+                    <div id="classesdiv">
+                        <label for="classes"><b>Class</b></label>
+                        <select id="classes" name="classes">
+                            <option value="none" selected disabled hidden>Select a Class</option>
+                            <option value="class1">Class 1</option>
+                            <option value="class2">Class 2</option>
+                            <option value="class3">Class 3</option>
+                            <option value="class4">Class 4</option>
+                            <option value="class5">Class 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line4">
+                    <div id="markheading">
+                        <b>Marks</b>
+                    </div>
+                    <div id="markscontainer">
+                        <div class="marksdiv"><input type="number" id="mark1" name="mark1" placeholder="Tamil" min="1"
+                                max="100" step=".01"></div>
+                        <div class="marksdiv"><input type="number" id="mark2" name="mark2" placeholder="English" min="1"
+                                max="100" step=".01"></div>
+                        <div class="marksdiv"><input type="number" id="mark3" name="mark3" placeholder="Maths" min="1"
+                                max="100" step=".01"></div>
+                        <div class="marksdiv"><input type="number" id="mark4" name="mark4" placeholder="Science" min="1"
+                                max="100" step=".01"></div>
+                        <div class="marksdiv"><input type="number" id="mark5" name="mark5" placeholder="Social" min="1"
+                                max="100" step=".01"></div>
+                    </div>
+                    <p class="errormessage"></p>
+                </div>
+                <div class="line7">
+                    <button type="button" onclick="calculate()">Calculate</button>
+                </div>
+                <div class="line5">
+                    <div id="totaldiv">
+                        <label for="total"><B>Total </B></label>
+                        <input type="text" id="total" placeholder="Total marks" disabled>
+                    </div>
+                    <div id="averagediv">
+                        <label for="average"><b>Average </b></label>
+                        <input type="text" id="average" name="average" placeholder="Average" disabled>
+                    </div>
+                </div>
+                <div class="line6">
+                    <div id="gradediv">
+                        <label for="grade"><b>Grade </b></label>
+                        <input type="text" name="grade" id="grade" placeholder="Grade" disabled>
+                    </div>
+                    <div id="resultdiv">
+                        <label for="result"><b>Result </b></label>
+                        <input type="text" name="result" id="result" placeholder="Result" disabled>
+                    </div>
+                </div>
+                <div class="line8">
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./js/myscript.js" type="text/javascript"></script>
+</body>
+
+</html>
