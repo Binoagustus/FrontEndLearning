@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    font-family: calibri;
+}
+
+header {
+    background-color: #242c42;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+header img {
+    margin-left: 20px;
+    width: 130px;
+}
+
+#icondiv {
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+#mailicondiv {
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
+#ic {
+    color: #28a8e0;
+}
+
+#micon {
+    color: #28a8e0;
+    margin-right: 9px;
+}
+
+#heading {
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 3%;
+}
+
+#mobilenumber {
+    /* color: #0071bc; */
+    color: #28a8e0;
+    margin-top: 15px;
+}
+
+#mobilenumber span {
+    font-size: 20px;
+    display: block;
+}
+
+#mail {
+    margin-top: 17px;
+}
+
+#mail #anchormail {
+    text-decoration: none;
+    font-size: 20px;
+    color: #28a8e0;
+}
+
+#outer {
+    background-color: #0071bc;
+    width: 53%;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+#inner {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+#inner p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#detaildiv #title {
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+
+#inner #detaildiv {
+    background-color: white;
+    border-top-left-radius: 40px;
+    color: #242c42;
+    flex: 1;
+    padding: 35px;
+}
+
+#detaildiv #dline1 {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#detaildiv #dline2 {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#detaildiv #dline3 {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+#detaildiv #dline4 {
+    display: flex;
+}
+
+#dline1 i {
+    margin-right: 15px;
+}
+
+#dline1 #lineicon1 {
+    margin-right: 10%;
+    padding-left: 5%;
+    color: #28a8e0;
+    font-weight: lighter;
+}
+
+#dline2 i {
+    margin-right: 15px;
+}
+
+#dline2 #lineicon2 {
+    margin-right: 6%;
+    color: #28a8e0;
+}
+
+#dline3 i {
+    margin-right: 15px;
+}
+
+#dline3 #lineicon3 {
+    margin-right: 10%;
+    color: #28a8e0;
+}
+
+#dline4 i {
+    margin-right: 15px;
+}
+
+#dline4 #lineicon4 {
+    color: #28a8e0;
+    margin-right: 9%;
+}
+
+#inner #formdiv {
+    background-color: #242c42;
+    border-bottom-right-radius: 40px;
+    padding: 35px;
+    flex: 1;
+    color: white;
+}
+
+#formdiv #title {
+    margin-bottom: 40px;
+}
+
+#formdiv #name {
+    width: 94%;
+    padding: 7px;
+    border: 1px solid #cccccc;
+}
+
+#formdiv div {
+    margin-bottom: 10px;
+}
+
+#formdiv #mailbox {
+    width: 94%;
+    padding: 7px;
+    border: 1px solid #cccccc;
+}
+
+#formdiv #mobnum {
+    width: 94%;
+    padding: 7px;
+    border: 1px solid #cccccc;
+}
+
+#formdiv #cities {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #cccccc;
+    padding-left: 15px;
+}
+
+#formdiv #languages {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+#formdiv button {
+    background-color: #28a8e0;
+    color: white;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.box::placeholder {
+    font-size: 1.5em;
+    padding-left: 15px;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"] {
+    font-size: 14px;
+    padding-left: 15px;
+    color: black;
+}
+
+#contentheading {
+    text-align: center;
+    width: 64.3%;
+    font-size: 1.4em;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+#contenttablediv {
+    width: 64.3%;
+    margin: 0 auto;
+}
+
+#contenttable {
+    border-spacing: 5px;
+    padding-bottom: 40px;
+}
+
+select {
+    font-size: 1.3em;
+}
+
+.contenticons {
+    background-color: #0071bc;
+    color: white;
+    padding: 5px;
+    width: 30px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.tabletext {
+    font-size: 1.4em;
+}
+
+footer {
+    width: 64%;
+    margin: 0 auto;
+    background-color: #242c42;
+    color: white;
+    padding: 40px;
+}
+
+footer h1 {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Media Query for mobile phone */
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        font-family: calibri;
+    }
+
+    header {
+        background-color: #242c42;
+        display: flex;
+        padding: 2%;
+        flex-wrap: wrap;
+        width: 96%;
+    }
+
+    header img {
+        margin-left: 5px;
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 5.5vw;
+    }
+
+    #logo{
+        width: 25%;
+    }
+
+    #icondiv {
+        margin-top: 15px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    #mailicondiv {
+        margin-top: 11px;
+        margin-left: 7%;
+    }
+
+    #ic {
+        color: #28a8e0;
+        font-size: 7vw;
+    }
+
+    #micon {
+        color: #28a8e0;
+        margin-right: 5px;
+        font-size: 7vw;
+    }
+
+    #heading {
+        color: white;
+        margin-left: 20%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    #mobilenumber {
+        /* color: #0071bc; */
+        color: #28a8e0;
+        margin-top: 5px;
+    }
+
+    #mobilenumber span {
+        font-size: 4.2vw;
+        display: block;
+    }
+
+    #mail {
+        margin-top: 17px;
+    }
+
+    #mail #anchormail {
+        text-decoration: none;
+        font-size: 4.2vw;
+        color: #28a8e0;
+    }
+
+    #outer {
+        background-color: #0071bc;
+        padding: 23.5%;
+        margin: 0;
+    }
+
+    #inner {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    #inner p {
+        font-size: 4vw;
+        margin-bottom: 8%;
+    }
+
+    #detaildiv #title {
+        margin-left: 12px;
+        margin-bottom: 21px;
+    }
+
+
+    #inner #detaildiv {
+        background-color: white;
+        border-top-left-radius: 40px;
+        color: #242c42;
+        flex: 1;
+        padding: 30px;
+        padding-bottom: 20px;
+    }
+
+    #detaildiv #dline1 {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    #detaildiv #dline2 {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    #detaildiv #dline3 {
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    #detaildiv #dline4 {
+        display: flex;
+    }
+
+    #dline1 i {
+        margin-right: 15px;
+    }
+
+    #dline1 #lineicon1 {
+        margin-right: 10%;
+        padding-left: 5%;
+        color: #28a8e0;
+        font-weight: lighter;
+    }
+
+    #dline2 i {
+        margin-right: 0.7rem;
+    }
+
+    #dline2 #lineicon2 {
+        margin-right: 2%;
+        color: #28a8e0;
+    }
+
+    #dline3 i {
+        margin-right: 15px;
+    }
+
+    #dline3 #lineicon3 {
+        margin-right: 6%;
+        color: #28a8e0;
+    }
+
+    #dline4 i {
+        margin-right: 15px;
+    }
+
+    #dline4 #lineicon4 {
+        color: #28a8e0;
+        margin-right: 4%;
+    }
+
+    #inner #formdiv {
+        background-color: #242c42;
+        border-bottom-right-radius: 40px;
+        padding: 30px;
+        flex: 1;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    #formdiv #title {
+        margin-bottom: 21px;
+    }
+
+    #formdiv #name {
+        width: 96%;
+        padding: 3px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv div {
+        margin-bottom: 10px;
+    }
+
+    #formdiv #mailbox {
+        width: 96%;
+        padding: 3px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv #mobnum {
+        width: 96%;
+        padding: 3px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv #cities {
+        width: 100%;
+        padding: 3px;
+        border: 1px solid #cccccc;
+        padding-left: 12px;
+        padding-top: 0;
+    }
+
+    #formdiv #languages {
+        width: 100%;
+        padding: 3px;
+        border: 1px solid #cccccc;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        padding-top: 0;
+    }
+
+    #formdiv button {
+        background-color: #28a8e0;
+        color: white;
+        width: 100%;
+        padding: 7px;
+        border: none;
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+
+    .box::placeholder {
+        font-size: 1em;
+        padding-left: 15px;
+        color: black;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 4vw;
+        padding-left: 15px;
+        color: black;
+    }
+
+    select {
+        font-size: 4vw;
+    }
+
+    #contenttablediv {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #contenttable{
+        padding-bottom: 25px;
+    }
+
+    td {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    tr{
+        text-align: -webkit-center;
+        text-align: -moz-center;
+    }
+
+    .contenticons{
+        border-radius: 50%;
+        padding: 13%;
+    }
+
+    .tabletext{
+        font-size: 4vw;
+    }
+
+    #contentheading{
+        font-size: 4vw;
+        padding-bottom: 25px;
+    }
+
+    footer h1{
+        font-size: 5vw;
+    }
+
+    footer p{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    * {
+        margin: 0;
+        font-family: calibri;
+    }
+
+    #logo {
+        margin-left: 2%;
+    }
+
+    header {
+        background-color: #242c42;
+        display: flex;
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        margin-left: 10px;
+        width: 115px;
+    }
+
+    header h1 {
+        font-size: 6.5vw;
+    }
+
+    #icondiv {
+        margin-top: 15px;
+        margin-left: 2.5%;
+        margin-right: 13px;
+    }
+
+    #mailicondiv {
+        margin-top: 11px;
+        margin-left: 7%;
+    }
+
+    #ic {
+        color: #28a8e0;
+        font-size: 7vw;
+    }
+
+    #micon {
+        color: #28a8e0;
+        font-size: 7vw;
+    }
+
+    #heading {
+        color: white;
+        margin-left: 11%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    #mobilenumber {
+        /* color: #0071bc; */
+        color: #28a8e0;
+        margin-top: 5px;
+    }
+
+    #mobilenumber span {
+        font-size: 4.2vw;
+        display: block;
+    }
+
+    #mail {
+        margin-top: 17px;
+    }
+
+    #mail #anchormail {
+        text-decoration: none;
+        font-size: 4.2vw;
+        color: #28a8e0;
+    }
+
+    #inner {
+        width: 131%;
+        justify-content: center;
+        display: flex;
+        margin-left: -15%;
+    }
+
+    #inner #detaildiv {
+        background-color: white;
+        border-top-left-radius: 40px;
+        color: #242c42;
+        flex: 1;
+        padding: 35px;
+    }
+
+    #detaildiv #title {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    #inner #formdiv {
+        background-color: #242c42;
+        border-bottom-right-radius: 40px;
+        padding: 35px;
+        flex: 1;
+        color: white;
+    }
+
+    #dline4 #lineicon4 {
+        color: #28a8e0;
+        margin-right: 8%;
+    }
+
+    #dline3 #lineicon3 {
+        color: #28a8e0;
+        margin-right: 9%;
+    }
+
+    #dline2 #lineicon2 {
+        color: #28a8e0;
+        margin-right: 2%;
+    }
+
+    #dline1 #lineicon1 {
+        margin-right: 10%;
+        padding-left: 5%;
+        color: #28a8e0;
+        font-weight: lighter;
+    }
+
+    #formdiv #title {
+        margin-bottom: 40px;
+    }
+
+    #formdiv #name {
+        width: 94%;
+        padding: 7px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv div {
+        margin-bottom: 10px;
+    }
+
+    #formdiv #mailbox {
+        width: 94%;
+        padding: 7px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv #mobnum {
+        width: 94%;
+        padding: 7px;
+        border: 1px solid #cccccc;
+    }
+
+    #formdiv #cities {
+        width: 102%;
+        padding: 4px;
+        border: 1px solid #cccccc;
+        padding-left: 15px;
+    }
+
+    #formdiv #languages {
+        width: 102%;
+        padding: 4px;
+        border: 1px solid #cccccc;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    #formdiv button {
+        background-color: #28a8e0;
+        color: white;
+        width: 100%;
+        padding: 7px;
+        border: none;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .box::placeholder {
+        font-size: 1.5em;
+        padding-left: 15px;
+        color: black;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 14px;
+        padding-left: 15px;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    * {
+        margin: 0;
+        font-family: calibri;
+    }
+
+    header {
+        background-color: #242c42;
+        display: flex;
+        padding: 15px;
+    }
+
+    header img {
+        margin-left: 0;
+        width: 120px;
+        margin-top: 10%;
+    }
+
+    #heading {
+        margin-right: 0%;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    #mobilenumber {
+        min-width: max-content;
+        margin-top: 20px;
+    }
+
+    #icondiv {
+        margin-top: 25px;
+    }
+
+    #mailicondiv {
+        margin-top: 25px;
+    }
+
+    #mail {
+        margin-top: 25px;
+    }
+
+    #inner #detaildiv {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    #inner #formdiv {
+        flex: 1;
+    }
+
+    #dline2 #lineicon2 {
+        margin-right: 1%;
+    }
+
+    #dline1 #lineicon1 {
+        margin-right: 9%;
+    }
+
+    #dline3 #lineicon3 {
+        margin-right: 9%;
+    }
+
+    #dline4 #lineicon4 {
+        margin-right: 8%;
+    }
+
+    #formdiv #languages {
+        width: 103%;
+    }
+
+    #formdiv #cities {
+        width: 103%;
+    }
+
+    #formdiv button {
+        width: 103%;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+
+    #mobilenumber {
+        min-width: fit-content;
+    }
+
+    #formdiv #name {
+        width: -webkit-fill-available;
+    }
+
+    #formdiv #mailbox {
+        width: -webkit-fill-available;
+    }
+
+    #formdiv #mobnum {
+        width: -webkit-fill-available;
+    }
+}
+
+@media only screen and (min-width: 1161px) and (max-width: 1440px) {
+
+    header img {
+        margin-left: 5px;
+    }
+
+    #heading {
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    #mobilenumber {
+        min-width: fit-content;
+    }
+
+    #formdiv #name {
+        width: -webkit-fill-available;
+    }
+
+    #formdiv #mailbox {
+        width: -webkit-fill-available;
+    }
+
+    #formdiv #mobnum {
+        width: -webkit-fill-available;
+    }
+
+    #icondiv {
+        margin-left: 11%;
+    }
+}
