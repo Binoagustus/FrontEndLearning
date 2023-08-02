@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -60,46 +61,27 @@
                         <b>Marks</b>
                     </div>
                     <div id="markscontainer">
-                        <div class="marksdiv"><input type="number" id="mark1" name="mark1" placeholder="Tamil" min="1"
-                                max="100" step=".01"></div>
-                        <div class="marksdiv"><input type="number" id="mark2" name="mark2" placeholder="English" min="1"
-                                max="100" step=".01"></div>
-                        <div class="marksdiv"><input type="number" id="mark3" name="mark3" placeholder="Maths" min="1"
-                                max="100" step=".01"></div>
-                        <div class="marksdiv"><input type="number" id="mark4" name="mark4" placeholder="Science" min="1"
-                                max="100" step=".01"></div>
-                        <div class="marksdiv"><input type="number" id="mark5" name="mark5" placeholder="Social" min="1"
-                                max="100" step=".01"></div>
+                        <div class="marksdiv"><input type="number" id="mark1" placeholder="Tamil" min="1"
+                                max="100" step=".01">Tamil</div>
+                        <div class="marksdiv"><input type="number" id="mark2" placeholder="English" min="1"
+                                max="100" step=".01">English</div>
+                        <div class="marksdiv"><input type="number" id="mark3" placeholder="Maths" min="1"
+                                max="100" step=".01">Maths</div>
+                        <div class="marksdiv"><input type="number" id="mark4" placeholder="Science" min="1"
+                                max="100" step=".01">Science</div>
+                        <div class="marksdiv"><input type="number" id="mark5" placeholder="Social" min="1"
+                                max="100" step=".01">Social</div>
                     </div>
                     <p class="errormessage"></p>
                 </div>
                 <div class="line7">
-                    <button type="button" onclick="calculate()">Calculate</button>
+                    <button type="button" id="add" onclick="addRow()">Add</button>
+                    <button type="button" id="update" onclick="updatefn()">Update</button>
                 </div>
-                <div class="line5">
-                    <div id="totaldiv">
-                        <label for="total"><B>Total </B></label>
-                        <input type="text" id="total" placeholder="Total marks" disabled>
-                    </div>
-                    <div id="averagediv">
-                        <label for="average"><b>Average </b></label>
-                        <input type="text" id="average" name="average" placeholder="Average" disabled>
-                    </div>
-                </div>
-                <div class="line6">
-                    <div id="gradediv">
-                        <label for="grade"><b>Grade </b></label>
-                        <input type="text" name="grade" id="grade" placeholder="Grade" disabled>
-                    </div>
-                    <div id="resultdiv">
-                        <label for="result"><b>Result </b></label>
-                        <input type="text" name="result" id="result" placeholder="Result" disabled>
-                    </div>
-                </div>
-                <div class="line8">
-                    <input type="submit" id="submit" value="Submit">
-                    <input type="reset" id="reset" value="Reset">
-                </div>
+                <table>
+                    <thead></thead>
+                    <tbody></tbody>            
+                </table>
             </form>
         </div>
     </section>
