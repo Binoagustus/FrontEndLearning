@@ -52,7 +52,7 @@ document.querySelector("thead").innerHTML = `
 <th>Social</th>
 <th>Total</th>
 <th>Grade</th>
-<th>Actions <button id="close" type="button" onclick=" clearForm(); disableOrEnableInView(false);"><i class="fa-solid fa-xmark"></i></button>
+<th>Actions <button id="close" type="button" onclick=" clearForm(); disableOrEnableInView(false); hideButton();"><i class="fa-solid fa-xmark"></i></button>
 </th>
 </tr>
 `
@@ -71,11 +71,22 @@ function addRowContent(num) {
         <td id="grade">${temparr[num].Grade}</td>
         <td>
         <button id="edit" type="button" onclick="editfn(this)"><i class="fa-regular fa-pen-to-square"></i></button>
-        <button id="view" type="button" onclick="viewfn(this);"><i class="fa-solid fa-eye"></i></button>
+        <button id="view" type="button" onclick="viewfn(this)"><i class="fa-solid fa-eye"></i></button>
         <button id="delete" type="button" onclick="deleteRow(this)"><i class="fa-solid fa-trash-can"></i></button>
         </td>
     </tr>
     `
+}
+
+let closebtn = document.getElementById("close");
+closebtn.style.display = 'none';
+
+function hideButton() {
+    closebtn.style.display = 'none';
+}
+
+function showButton() {
+    closebtn.style.display = 'table-cell';
 }
 
 //Add Content to Table by reading the JSON Array
@@ -159,6 +170,7 @@ function viewOrEdit(td) {
 function viewfn(td) {
     viewOrEdit(td);
     disableOrEnableInView(true);
+    showButton();
 }
 
 function editfn(td) {
@@ -166,6 +178,7 @@ function editfn(td) {
     document.getElementById("reg_no").disabled = true;
     document.getElementById("add").disabled = true;
     rowPosition = td.parentElement.parentElement.rowIndex;
+    showButton();
 }
 
 function updatefn() {
